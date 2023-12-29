@@ -16,8 +16,7 @@ class DoctorFactory extends Factory
      */
     public function definition(): array
     {
-          $gender = fake()->randomElement(['male', 'female']);
-
+          $gender = fake()->randomElement(['male', 'female']);// comment
             return [
             'first_name' => fake()->firstName($gender),
             'last_name'=> fake()->lastName(),
